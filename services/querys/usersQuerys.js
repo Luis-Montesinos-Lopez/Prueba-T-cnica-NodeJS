@@ -16,6 +16,7 @@ usersQuerys.getUserByEmail = async (email) => {
         conn && await conn.close();
     }
 };
+
 usersQuerys.addUser = async (userData) => {
     conn = null;
     try {

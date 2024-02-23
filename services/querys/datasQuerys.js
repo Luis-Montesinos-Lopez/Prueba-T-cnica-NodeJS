@@ -1,6 +1,7 @@
 const db = require("../dbConnection");
 
 let dataQuerys = {};
+
 dataQuerys.getData = async () => {
     conn = null
     try {

@@ -8,5 +8,7 @@ datasRouter.use("/", (req, res, next) => {
     console.log(pc.magenta("Using datas Router..."))
     next();
 })
+
 datasRouter.get("/",verifyTokenMiddleware, getData);
+
 module.exports = datasRouter;

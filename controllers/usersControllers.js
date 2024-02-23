@@ -5,6 +5,7 @@ const { validateUser, validateLogin } = require("../utils/zodSchemas");
 const usersQuerys = require("../services/querys/usersQuerys");
 
 let users = {};
+
 users.addUser = async (req, res) => {
     try {
         const validate = validateUser.parse(req.body);
@@ -19,6 +20,7 @@ users.addUser = async (req, res) => {
         return res.status(500).send(e.message)
     }
 };
+
 users.login = async (req, res) => {
     try {
         const validate = validateLogin.parse(req.body)
@@ -41,4 +43,5 @@ users.login = async (req, res) => {
         return res.status(500).send(e.message)
     }
 };
+
 module.exports = users;
