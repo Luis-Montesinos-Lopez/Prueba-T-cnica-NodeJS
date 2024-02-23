@@ -10,7 +10,7 @@ dataQuerys.getData = async () => {
         return rows
     } catch (e) {
         throw new Error(e.message)
-    }finally{
+    } finally {
         conn && await conn.close();
     }
 };

@@ -9,6 +9,6 @@ datasRouter.use("/", (req, res, next) => {
     next();
 })
 
-datasRouter.get("/",verifyTokenMiddleware, getData);
+datasRouter.get("/", verifyTokenMiddleware, getData);
 
 module.exports = datasRouter;

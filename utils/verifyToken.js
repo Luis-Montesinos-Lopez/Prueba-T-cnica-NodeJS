@@ -1,4 +1,4 @@
-const {jwtVerify } = require("jose");
+const { jwtVerify } = require("jose");
 
 const verifyToken = async (authorization) => {
     try {

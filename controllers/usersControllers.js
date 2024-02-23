@@ -13,7 +13,7 @@ users.addUser = async (req, res) => {
         if (user.length > 0) {
             return res.status(400).send("User already exists")
         }
-         await usersQuerys.addUser(validate);
+        await usersQuerys.addUser(validate);
         return res.status(201).send(`User ${validate.nombre} successfully created`)
     } catch (e) {
         if (e instanceof ZodError) return res.status(400).send(e.issues.map(issue => issue.message))
@@ -31,13 +31,13 @@ users.login = async (req, res) => {
         if (user[0].password !== md5(validate.password)) {
             return res.status(401).send("Incorrect password")
         }
-        const jwtConstructor = new SignJWT({ id: user[0].id,email:user[0].email });
+        const jwtConstructor = new SignJWT({ id: user[0].id, email: user[0].email });
         const encoder = new TextEncoder();
         const jwt = await jwtConstructor
             .setProtectedHeader({ alg: 'HS256', typ: 'JWT' })
             .setExpirationTime("1h")
             .sign(encoder.encode(process.env.JWT_SECRET));
-        return res.send({jwt})
+        return res.send({ jwt })
     } catch (e) {
         if (e instanceof ZodError) return res.status(400).send(e.issues.map(issue => issue.message))
         return res.status(500).send(e.message)

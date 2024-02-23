@@ -6,15 +6,15 @@ let datas = {};
 datas.getData = async (req, res) => {
     try {
         const payload = req.user;
-        if(!payload){
+        if (!payload) {
             return res.status(401).send("Unauthorized");
         };
         const user = await usersQuerys.getUserByEmail(payload.email);
-        if(user.length <= 0){
+        if (user.length <= 0) {
             return res.status(404).send("User does not exist");
         }
         const id = user[0].id;
-        if(id !== payload.id){
+        if (id !== payload.id) {
             return res.status(401).send("Unauthorized");
         }
         const data = await dataQuerys.getData()
@@ -32,12 +32,12 @@ datas.getData = async (req, res) => {
             }
         });
         let result = data.filter(item => item.padre === null);
-        return res.status(200).send(result)
+        return res.status(200).send(result);
     } catch (e) {
-        return res.status(500).send(e.message)
+        return res.status(500).send(e.message);
     }
 };
 
-module.exports = datas
+module.exports = datas;
 
 
