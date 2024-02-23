@@ -8,7 +8,6 @@ usersRouter.use("/", (req, res, next) => {
     next();
 })
 
-usersRouter.get("/", getUsers);
 usersRouter.post("/", addUser);
 usersRouter.post("/login", login);
 

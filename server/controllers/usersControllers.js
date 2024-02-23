@@ -5,18 +5,6 @@ const { ValidateUser, ValidateLogin } = require("../utils/ZodSchemas");
 const usersQuerys = require("../services/querys/usersQuerys");
 
 let users = {};
-users.getUsers = async (req, res) => {
-    try {
-        const users = await usersQuerys.getUsers();
-        if (users.length <= 0) {
-            return res.status(404).send("No hay usuarios")
-        }
-        return res.status(200).send(users);
-    } catch (e) {
-        return res.status(500).send(e.message)
-    }
-
-}
 users.addUser = async (req, res) => {
     try {
         const validate = ValidateUser.parse(req.body);
@@ -51,6 +39,5 @@ users.login = async (req, res) => {
         if (e instanceof ZodError) return res.status(400).send(e.issues.map(issue => issue.message))
         return res.status(500).send(e.message)
     }
-}
-
+};
 module.exports = users;

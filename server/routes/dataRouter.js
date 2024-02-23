@@ -1,7 +1,7 @@
 const express = require("express");
 const datasRouter = express.Router();
 const pc = require("picocolors");
-const { getData } = require("../controllers/datasControllers");
+const { getData, addData } = require("../controllers/datasControllers");
 const verifyTokenMiddleware = require("../utils/VerifiTokenMiddleware");
 
 datasRouter.use("/", (req, res, next) => {
@@ -10,6 +10,7 @@ datasRouter.use("/", (req, res, next) => {
 })
 
 datasRouter.get("/",verifyTokenMiddleware, getData);
+
 
 
 

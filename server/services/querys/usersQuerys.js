@@ -1,25 +1,14 @@
 const db = require("../dbConnection");
 const md5 = require("md5");
 const moment = require("moment");
+
 let usersQuerys = {};
-usersQuerys.getUsers = async () => {
-    conn = null;
-    try {
-        conn = await db.createConnection();
-        const rows = await db.query("SELECT * FROM users", [], "select", conn);
-        return rows
-    } catch (e) {
-        throw new Error(e.message)
-    } finally {
-        conn && await conn.close();
-    }
-}
+
 usersQuerys.getUserByEmail = async (email) => {
     conn = null
     try {
         conn = await db.createConnection();
         const rows = await db.query("SELECT * FROM users WHERE email = ?", email, "select", conn);
-        console.log(rows)
         return rows
     } catch (e) {
         throw new Error(e.message)

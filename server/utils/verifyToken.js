@@ -7,10 +7,8 @@ const verifyToken = async (authorization) => {
             token,
             encoder.encode(process.env.JWT_SECRET)
         );
-        
         return payload;
     } catch (e) {
-        console.log(e)
         throw new Error(e.message);
     };
 }

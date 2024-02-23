@@ -15,5 +15,5 @@ app.use("/users", usersRouter);
 app.use("/datas", datasRouter);
 
 app.listen(port, () => {
-    console.log(pc.cyan(`Server running on port ${port}`))
+    console.log(pc.cyan(` Server running on port ${port}`))
 });
