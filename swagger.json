@@ -119,6 +119,11 @@
         "tags": ["Data"],
         "summary": "Get data",
         "operationId": "getData",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -159,13 +164,19 @@
           "401": {
             "description": "Unauthorized"
           },
-          "404": {
-            "description": "Data not found"
-          },
           "500": {
             "description": "Internal server error"
           }
         }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
       }
     }
   }
