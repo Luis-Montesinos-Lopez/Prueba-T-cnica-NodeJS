@@ -7,58 +7,53 @@ _Api que maneja control de usuarios (registro y login) y lectura de datos dispon
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
-
 
 ### Pre-requisitos 📋
 
 _Deberás clonar los datos del repositorio en tu dispositivo_
 
 ```
-git clone
+git clone https://github.com/Luis-Montesinos-Lopez/Prueba-Tecnica-NodeJS.git
 ```
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Sigue estos pasos para instalar las dependencias y ejecutar el proyecto:_
 
-_Dí cómo será ese paso_
+_Instala Node.js (versión >= 16) y npm o yarn._
 
+-Navega a la carpeta del proyecto:_
 ```
-Da un ejemplo
+cd nombreDelProyecto
 ```
-
-_Y repite_
-
+_Instala las dependencias:_
 ```
-hasta finalizar
+ npm install o yarn
+ ```
+
+_Inicia el servidor:_ 
 ```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
+npm start o yarn start
 ```
 
-### Y las pruebas de estilo de codificación ⌨️
+_El servidor se iniciará en el puerto 3000 por defecto._
 
-_Explica que verifican estas pruebas y por qué_
+_Puedes probar la API usando herramientas como  Postman o Thunder Client._
 
+_Para registrar un usuario, envía una solicitud POST a la ruta /api/users con los datos del usuario en el cuerpo de la solicitud._
 ```
-Da un ejemplo
+http://localhost:3000/users
 ```
 
-## Despliegue 📦
+_Para iniciar sesión, envía una solicitud POST a la ruta /api/login con el nombre de usuario y la contraseña en el cuerpo de la solicitud._
+```
+http://localhost:3000/users/login
+```
 
-_Agrega notas adicionales sobre como hacer deploy_
+_Para obtener datos, envía una solicitud GET a la ruta /api/data con el token de acceso en la cabecera Authorization._
+```
+http://localhost:3000/datas
+```
 
 ## Construido con 🛠️
 
