@@ -15,7 +15,7 @@ _Deberás clonar los datos del repositorio en tu dispositivo_
 ```
 git clone https://github.com/Luis-Montesinos-Lopez/Prueba-Tecnica-NodeJS.git
 ```
--En este caso, el archivo .env no se encuentra en el .gitignore para que pueda ser utilizado con esa configuración._
+_En este caso, el archivo .env no se encuentra en el .gitignore para que pueda ser utilizado con esa configuración._
 
 ### Instalación 🔧
 
