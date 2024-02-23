@@ -1,13 +1,13 @@
 const { ZodError } = require("zod");
 const md5 = require("md5");
 const { SignJWT } = require("jose");
-const { ValidateUser, ValidateLogin } = require("../utils/zodSchemas");
+const { validateUser, validateLogin } = require("../utils/zodSchemas");
 const usersQuerys = require("../services/querys/usersQuerys");
 
 let users = {};
 users.addUser = async (req, res) => {
     try {
-        const validate = ValidateUser.parse(req.body);
+        const validate = validateUser.parse(req.body);
         const user = await usersQuerys.getUserByEmail(validate.email);
         if (user.length > 0) {
             return res.status(400).send("User already exists")
@@ -21,7 +21,7 @@ users.addUser = async (req, res) => {
 };
 users.login = async (req, res) => {
     try {
-        const validate = ValidateLogin.parse(req.body)
+        const validate = validateLogin.parse(req.body)
         const user = await usersQuerys.getUserByEmail(validate.email);
         if (user.length <= 0) {
             return res.status(404).send("The user does not exist")
