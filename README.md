@@ -66,7 +66,8 @@ _Para obtener datos, envía una solicitud GET a la ruta /api/datas con el token 
 http://localhost:3000/datas
 ```
 
-### Swagger !Swagger
+### Swagger [![SWAGGER](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Swagger_logo.svg/1200px-Swagger_logo.svg.png)](https://swagger.io/)
+
 
 
 _Si lo deseas, puedes ejecutar las rutas en swagger. Tan solo tienes que usar la siguiente URL en tu navegador cuando inicies la API._
