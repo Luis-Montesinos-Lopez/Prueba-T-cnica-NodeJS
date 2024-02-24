@@ -16,11 +16,11 @@ datas.getData = async (req, res) => {
         const id = user[0].id;
         if (id !== payload.id) {
             return res.status(401).send("Unauthorized");
-        }
-        const data = await dataQuerys.getData()
+        };
+        const data = await dataQuerys.getData();
         if (data.length <= 0) {
             return res.status(404).send("Data does not exist");
-        }
+        };
         const map = new Map();
         const result = [];
         data.forEach(item => {
@@ -40,7 +40,7 @@ datas.getData = async (req, res) => {
         return res.status(200).send(result);
     } catch (e) {
         return res.status(500).send(e.message);
-    }
+    };
 };
 
 module.exports = datas;

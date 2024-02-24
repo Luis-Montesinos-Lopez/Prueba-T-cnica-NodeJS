@@ -7,7 +7,7 @@ dataQuerys.getData = async () => {
     try {
         conn = await db.createConnection();
         const rows = await db.query("SELECT * FROM datas", [], "select", conn);
-        return rows
+        return rows;
     } catch (e) {
         throw new Error("Error al obtener datos: " + e.message)
     } finally {

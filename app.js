@@ -1,9 +1,9 @@
 const express = require("express");
-const app = express();
 const dotenv = require("dotenv").config();
 const logger = require("morgan");
 const cors = require("cors");
 const pc = require("picocolors");
+const app = express();
 
 const usersRouter = require("./routes/usersRouter");
 const datasRouter = require("./routes/dataRouter");

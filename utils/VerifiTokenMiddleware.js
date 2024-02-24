@@ -14,6 +14,6 @@ const verifyTokenMiddleware = async (req, res, next) => {
     } catch (e) {
         return res.status(401).send("Invalid token");
     };
-}
+};
 
 module.exports = verifyTokenMiddleware;

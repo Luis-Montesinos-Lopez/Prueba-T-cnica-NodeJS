@@ -12,13 +12,13 @@ users.addUser = async (req, res) => {
         const user = await usersQuerys.getUserByEmail(validate.email);
         if (user) {
             return res.status(400).send("User already exists")
-        }
+        };
         await usersQuerys.addUser(validate);
         return res.status(201).send(`User ${validate.nombre} successfully created`)
     } catch (e) {
         if (e instanceof ZodError) return res.status(400).send(e.issues.map(issue => issue.message))
         return res.status(500).send(e.message)
-    }
+    };
 };
 
 users.login = async (req, res) => {
