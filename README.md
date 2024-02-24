@@ -66,7 +66,7 @@ _Para obtener datos, envía una solicitud GET a la ruta /api/datas con el token 
 http://localhost:3000/datas
 ```
 
-### Swagger [!(https://user-images.githubusercontent.com/25181517/186711335-a3729606-5a78-4496-9a36-06efcc74f800.png)](https://swagger.io/)
+### Swagger [!<img width="30" src="https://user-images.githubusercontent.com/25181517/186711335-a3729606-5a78-4496-9a36-06efcc74f800.png" alt="Swagger" title="Swagger"/>](https://swagger.io/)
 
 
 
