@@ -1,6 +1,6 @@
 # Prueba Técnica NodeJs
 
-_Api que maneja control de usuarios (registro y login) y lectura de datos disponibles solo para usuarios logeados._
+_API que maneja control de usuarios (registro y login) y lectura de datos disponibles solo para usuarios logeados._
 
 
 ## Comenzando 🚀
@@ -88,7 +88,7 @@ _Crea un contendor basado en la imagen que acabas de construir._
 docker run -p 3000:3000 --name prueba-tecnica-container prueba-tecnica-nodejs
 ```
 ### Accede a tu API
-_Tu API debería estar disponible en ```localhost://3000```
+_Tu API debería estar disponible en ```localhost://3000```_
 
 ## Construido con 🛠️
 
