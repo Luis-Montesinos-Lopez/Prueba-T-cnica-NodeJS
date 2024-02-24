@@ -21,17 +21,22 @@ datas.getData = async (req, res) => {
         if (data.length <= 0) {
             return res.status(404).send("Data does not exist");
         }
-        let map = new Map(data.map(item => [item.numserie, item]));
+        const map = new Map();
+        const result = [];
         data.forEach(item => {
             item.hijos = [];
+            map.set(item.numserie, item);
+        });
+        data.forEach(item => {
             if (item.padre !== null) {
-                let parent = map.get(item.padre);
+                const parent = map.get(item.padre);
                 if (parent) {
                     parent.hijos.push(item);
                 }
+            } else {
+                result.push(item);
             }
         });
-        let result = data.filter(item => item.padre === null);
         return res.status(200).send(result);
     } catch (e) {
         return res.status(500).send(e.message);

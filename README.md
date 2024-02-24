@@ -39,6 +39,8 @@ npm start o yarn start
 
 _El servidor se iniciará en el puerto 3000 por defecto._
 
+### Prueba 💻
+
 _Puedes probar la API usando herramientas como  Postman o Thunder Client._
 
 _Para usar las rutas definidas en Postman solo tienes que importar el archivo adjunto:_
@@ -65,6 +67,28 @@ _Si lo deseas, puedes ejecutar las rutas en swagger. Tan solo tienes que usar la
 ```
 localhost:3000/api-docs
 ```
+
+## Docker 🐳
+
+### Requisitos previos
+_Se ha añadido una configuración para el uso en Docker de la API. Para usarla asegúrate de tener Docker instalado en tu sistema. Si aún no lo tienes, puedes descargarlo desde el sitio oficial de Docker._
+```
+https://www.docker.com/
+```
+### Construye la imagen de Docker
+_Navega al directorio raíz del proyecto y ejecuta el siguiente código:_
+```
+docker build -t prueba-tecnica-nodejs
+```
+
+### Crea y ejecuta el contenedor
+_Crea un contendor basado en la imagen que acabas de construir._
+
+```
+docker run -p 3000:3000 --name prueba-tecnica-container prueba-tecnica-nodejs
+```
+### Accede a tu API
+_Tu API debería estar disponible en ```localhost://3000```
 
 ## Construido con 🛠️
 
