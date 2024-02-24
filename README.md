@@ -51,21 +51,32 @@ _Para usar las rutas definidas en Postman solo tienes que importar el archivo ad
 ```
 Prueba-Tecnica-NodeJs.postman_collection.json
 ```
-
+#### Registro de Usuarios
 _Para registrar un usuario, envía una solicitud POST a la ruta /api/users con los datos del usuario en el cuerpo de la solicitud._
 ```
 http://localhost:3000/users
 ```
+_Se ha configurado para que se deban rellenar todos los datos del usuario (nombre, email y password)._
+_Además, el nombre solo puede contener letras._
+_Solo se permiten emails válidos._
+_La contraseña se encripta usando el módulo md5 para una mayor seguridad._
 
+#### Login
 _Para iniciar sesión, envía una solicitud POST a la ruta /api/login con el email y la contraseña en el cuerpo de la solicitud._
 ```
 http://localhost:3000/users/login
 ```
+_Tras comprobar el email y la contraseña, si todo ha ido correctamente, se devolverá el token firmado con la clave secreta que se_ _encuentra en el archivo .env._
+_Este token deberá ser introducido en la sección Authorization del header en la siguiente ruta._
 
-_Para obtener datos, envía una solicitud GET a la ruta /api/datas con el token de acceso en la cabecera Authorization._
+#### Acceso a los datos
+_Para obtener datos, envía una solicitud GET a la ruta /api/datas con el token de acceso en el header Authorization._
 ```
 http://localhost:3000/datas
 ```
+_Tras verificar el token y comprobar la existencia del usuario cuya información contiene, si todo es correcto, se procederá a_
+_mostrar los datos ordenados jerárquicamente donde primero se muestra el elemento que no tiene padre y, anidados en su interior,_
+_sus hijos y los hijos de los mismos._
 
 ### Swagger  [<img width="30" src="https://user-images.githubusercontent.com/25181517/186711335-a3729606-5a78-4496-9a36-06efcc74f800.png" alt="Swagger" title="Swagger"/>](https://swagger.io/)
 
