@@ -10,7 +10,7 @@ users.addUser = async (req, res) => {
     try {
         const validate = validateUser.parse(req.body);
         const user = await usersQuerys.getUserByEmail(validate.email);
-        if (user.length > 0) {
+        if (user) {
             return res.status(400).send("User already exists")
         }
         await usersQuerys.addUser(validate);
@@ -25,13 +25,13 @@ users.login = async (req, res) => {
     try {
         const validate = validateLogin.parse(req.body)
         const user = await usersQuerys.getUserByEmail(validate.email);
-        if (user.length <= 0) {
+        if (!user) {
             return res.status(404).send("The user does not exist")
         }
-        if (user[0].password !== md5(validate.password)) {
+        if (user.password !== md5(validate.password)) {
             return res.status(401).send("Incorrect password")
         }
-        const jwtConstructor = new SignJWT({ id: user[0].id, email: user[0].email });
+        const jwtConstructor = new SignJWT({ id: user.id, email: user.email });
         const encoder = new TextEncoder();
         const jwt = await jwtConstructor
             .setProtectedHeader({ alg: 'HS256', typ: 'JWT' })
