@@ -41,7 +41,8 @@ _El servidor se iniciará en el puerto 3000 por defecto._
 
 ## Prueba 💻
 
-### Endpoints !Postman
+### Endpoints  [<img width="30" src="https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png" alt="Postman" title="Postman"/>](https://www.postman.com/)
+
 
 
 _Puedes probar la API usando herramientas como  Postman o Thunder Client._
@@ -66,7 +67,7 @@ _Para obtener datos, envía una solicitud GET a la ruta /api/datas con el token 
 http://localhost:3000/datas
 ```
 
-### Swagger [!<img width="30" src="https://user-images.githubusercontent.com/25181517/186711335-a3729606-5a78-4496-9a36-06efcc74f800.png" alt="Swagger" title="Swagger"/>](https://swagger.io/)
+### Swagger  [<img width="30" src="https://user-images.githubusercontent.com/25181517/186711335-a3729606-5a78-4496-9a36-06efcc74f800.png" alt="Swagger" title="Swagger"/>](https://swagger.io/)
 
 
 
@@ -75,7 +76,8 @@ _Si lo deseas, puedes ejecutar las rutas en swagger. Tan solo tienes que usar la
 localhost:3000/api-docs
 ```
 
-## Docker !Docker
+## Docker  [<img width="30" src="https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png" alt="Docker" title="Docker"/>](https://www.docker.com/)
+
 
 
 ### Requisitos previos
@@ -102,12 +104,14 @@ _Tu API debería estar disponible en ```localhost://3000```_
 
 _El proyecto ha sido desarrollado con las siguientes herramientas:_
 
-* _Node.js (versión >= 16)_ !Node.js
-
-* _Express (framework web)_ !Express
+* _Node.js (versión >= 16)_ [<img width="30" src="https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png" alt="Node.js" title="Node.js"/>](https://nodejs.org/en/)
 
 
-* _SQLite (base de datos)_ !SQLite
+* _Express (framework web)_ [<img width="30" src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png" alt="Express" title="Express"/>](https://expressjs.com/)
+
+
+
+* _SQLite (base de datos)_ [<img width="30" src="https://github.com/marwin1991/profile-technology-icons/assets/136815194/82df4543-236b-4e45-9604-5434e3faab17" alt="SQLite" title="SQLite"/>](https://www.sqlite.org/)
 
 
 
