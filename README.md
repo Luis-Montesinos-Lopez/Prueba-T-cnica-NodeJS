@@ -115,14 +115,14 @@ _Tu API debería estar disponible en ```localhost://3000```_
 
 _El proyecto ha sido desarrollado con las siguientes herramientas:_
 
-* _Node.js _ [<img width="30" src="https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png" alt="Node.js" title="Node.js"/>](https://nodejs.org/en/)
+* _Node.js [<img width="30" src="https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png" alt="Node.js" title="Node.js"/>](https://nodejs.org/en/)_ 
 
 
-* _Express _ [<img width="30" src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png" alt="Express" title="Express"/>](https://expressjs.com/)
+* _Express [<img width="30" src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png" alt="Express" title="Express"/>](https://expressjs.com/)_ 
 
 
 
-* _SQLite _ [<img width="30" src="https://github.com/marwin1991/profile-technology-icons/assets/136815194/82df4543-236b-4e45-9604-5434e3faab17" alt="SQLite" title="SQLite"/>](https://www.sqlite.org/)
+* _SQLite  [<img width="30" src="https://github.com/marwin1991/profile-technology-icons/assets/136815194/82df4543-236b-4e45-9604-5434e3faab17" alt="SQLite" title="SQLite"/>](https://www.sqlite.org/)_
 
 
 
