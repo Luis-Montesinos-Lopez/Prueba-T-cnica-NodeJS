@@ -5,7 +5,7 @@ _API que maneja control de usuarios (registro y login) y lectura de datos dispon
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento._
 
 
 ### Pre-requisitos 📋
