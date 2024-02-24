@@ -23,9 +23,9 @@ _Sigue estos pasos para instalar las dependencias y ejecutar el proyecto:_
 
 _Instala Node.js (versión >= 16) y npm o yarn._
 
--Navega a la carpeta del proyecto:_
+_Navega a la carpeta del proyecto:_
 ```
-cd nombreDelProyecto
+cd Prueba-Tecnica-NodeJS
 ```
 _Instala las dependencias:_
 ```
@@ -41,12 +41,17 @@ _El servidor se iniciará en el puerto 3000 por defecto._
 
 _Puedes probar la API usando herramientas como  Postman o Thunder Client._
 
+_Para usar las rutas definidas en Postman solo tienes que importar el archivo adjunto:_
+```
+Prueba-Tecnica-NodeJs.postman_collection.json
+```
+
 _Para registrar un usuario, envía una solicitud POST a la ruta /api/users con los datos del usuario en el cuerpo de la solicitud._
 ```
 http://localhost:3000/users
 ```
 
-_Para iniciar sesión, envía una solicitud POST a la ruta /api/login con el nombre de usuario y la contraseña en el cuerpo de la solicitud._
+_Para iniciar sesión, envía una solicitud POST a la ruta /api/login con el email y la contraseña en el cuerpo de la solicitud._
 ```
 http://localhost:3000/users/login
 ```
@@ -54,6 +59,11 @@ http://localhost:3000/users/login
 _Para obtener datos, envía una solicitud GET a la ruta /api/data con el token de acceso en la cabecera Authorization._
 ```
 http://localhost:3000/datas
+```
+
+_Si lo deseas, puedes ejecutar las rutas en swagger. Tan solo tienes que usar la siguiente URL en tu navegador cuando inicies la API:_
+```
+localhost:3000/api-docs
 ```
 
 ## Construido con 🛠️
