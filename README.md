@@ -43,7 +43,7 @@ _El servidor se iniciará en el puerto 3000 por defecto._
 
 _Puedes probar la API usando herramientas como  Postman o Thunder Client._
 
-_Para usar las rutas definidas en Postman solo tienes que importar el archivo adjunto:_
+_Para usar las rutas definidas en Postman solo tienes que importar el archivo adjunto._
 ```
 Prueba-Tecnica-NodeJs.postman_collection.json
 ```
@@ -58,12 +58,12 @@ _Para iniciar sesión, envía una solicitud POST a la ruta /api/login con el ema
 http://localhost:3000/users/login
 ```
 
-_Para obtener datos, envía una solicitud GET a la ruta /api/data con el token de acceso en la cabecera Authorization._
+_Para obtener datos, envía una solicitud GET a la ruta /api/datas con el token de acceso en la cabecera Authorization._
 ```
 http://localhost:3000/datas
 ```
 
-_Si lo deseas, puedes ejecutar las rutas en swagger. Tan solo tienes que usar la siguiente URL en tu navegador cuando inicies la API:_
+_Si lo deseas, puedes ejecutar las rutas en swagger. Tan solo tienes que usar la siguiente URL en tu navegador cuando inicies la API._
 ```
 localhost:3000/api-docs
 ```
@@ -76,7 +76,7 @@ _Se ha añadido una configuración para el uso en Docker de la API. Para usarla 
 https://www.docker.com/
 ```
 ### Construye la imagen de Docker
-_Navega al directorio raíz del proyecto y ejecuta el siguiente código:_
+_Navega al directorio raíz del proyecto y ejecuta el siguiente código._
 ```
 docker build -t prueba-tecnica-nodejs
 ```
