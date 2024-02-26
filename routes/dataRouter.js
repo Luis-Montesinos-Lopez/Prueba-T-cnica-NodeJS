@@ -2,7 +2,8 @@ const express = require("express");
 const datasRouter = express.Router();
 const pc = require("picocolors");
 const { getData } = require("../controllers/datasControllers");
-const verifyTokenMiddleware = require("../utils/verifiTokenMiddleware");
+const verifyTokenMiddleware = require("../utils/verifyTokenMiddleware");
+
 
 datasRouter.use("/", (req, res, next) => {
     console.log(pc.magenta("Using datas Router..."))

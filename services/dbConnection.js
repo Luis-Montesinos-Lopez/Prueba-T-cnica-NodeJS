@@ -1,11 +1,12 @@
 const sqlite3 = require('sqlite3').verbose();
-
+const path = require("path");
+const dbPath = path.resolve(__dirname, "../db.sqlite3");
 let db = {};
 
 db.createConnection = async () => {
     return new Promise((resolve, reject) => {
         try {
-            let conn = new sqlite3.Database("../db", sqlite3.OPEN_READWRITE, (e) => {
+            let conn = new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, (e) => {
                 if (e) {
                     reject(new Error(e.message));
                 } else {

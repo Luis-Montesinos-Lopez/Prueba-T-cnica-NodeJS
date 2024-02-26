@@ -1,8 +1,8 @@
 const { ZodError } = require("zod");
 const md5 = require("md5");
 const { SignJWT } = require("jose");
-const { validateUser, validateLogin } = require("../utils/zodSchemas");
 const usersQuerys = require("../services/querys/usersQuerys");
+const { validateUser, validateLogin } = require("../utils/zodSchemas");
 
 let users = {};
 
