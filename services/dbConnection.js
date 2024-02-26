@@ -5,11 +5,10 @@ let db = {};
 db.createConnection = async () => {
     return new Promise((resolve, reject) => {
         try {
-            let conn = new sqlite3.Database(process.env.DB, sqlite3.OPEN_READWRITE, (e) => {
+            let conn = new sqlite3.Database("../db", sqlite3.OPEN_READWRITE, (e) => {
                 if (e) {
                     reject(new Error(e.message));
                 } else {
-
                     resolve(conn);
                 }
             });

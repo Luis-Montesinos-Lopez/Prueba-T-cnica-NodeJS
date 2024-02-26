@@ -43,6 +43,7 @@ datas.getData = async (req, res) => {
     };
 };
 
+
 module.exports = datas;
 
 
