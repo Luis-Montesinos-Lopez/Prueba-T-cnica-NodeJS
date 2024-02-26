@@ -13,7 +13,7 @@ datas.getData = async (req, res) => {
         if (user.length <= 0) {
             return res.status(404).send("User does not exist");
         }
-        const id = user[0].id;
+        const id = user.id;
         if (id !== payload.id) {
             return res.status(401).send("Unauthorized");
         };
