@@ -4,7 +4,7 @@ const pc = require("picocolors");
 const { addUser, login } = require("../controllers/usersControllers");
 
 usersRouter.use("/", (req, res, next) => {
-    console.log(pc.magenta("Using Users Router..."))
+    console.log(pc.magenta("Using users Router..."))
     next();
 })
 

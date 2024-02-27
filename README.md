@@ -23,6 +23,10 @@ _Sigue estos pasos para instalar las dependencias y ejecutar el proyecto:_
 
 _Instala Node.js (versión >= 16) y npm o yarn._
 
+```
+https://nodejs.org/en/
+```
+
 _Navega a la carpeta del proyecto:_
 ```
 cd Prueba-Tecnica-NodeJS
@@ -99,7 +103,7 @@ https://www.docker.com/
 ### Construye la imagen de Docker
 _Navega al directorio raíz del proyecto y ejecuta el siguiente código._
 ```
-docker build -t prueba-tecnica-nodejs
+docker build -t prueba-tecnica-nodejs .
 ```
 
 ### Crea y ejecuta el contenedor
