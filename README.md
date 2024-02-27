@@ -23,9 +23,9 @@ _Sigue estos pasos para instalar las dependencias y ejecutar el proyecto:_
 
 _Instala Node.js (versión >= 16) y npm o yarn._
 
-```
-https://nodejs.org/en/
-```
+
+[NodeJS](https://nodejs.org/en/)
+
 
 _Navega a la carpeta del proyecto:_
 ```
