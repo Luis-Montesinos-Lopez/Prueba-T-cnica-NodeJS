@@ -105,6 +105,9 @@ _Navega al directorio raíz del proyecto y ejecuta el siguiente código._
 ```
 docker build -t prueba-tecnica-nodejs .
 ```
+#### ¡IMPORTANTE!
+_Asegúrate de tener iniciado docker antes de realizar la contruscción de la imagen._
+
 
 ### Crea y ejecuta el contenedor
 _Crea un contendor basado en la imagen que acabas de construir._
