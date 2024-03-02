@@ -55,6 +55,9 @@ _Para usar las rutas definidas en Postman solo tienes que importar el archivo ad
 ```
 Prueba-Tecnica-NodeJs.postman_collection.json
 ```
+#### **¡IMPORTANTE!**
+_Asegúrate de tener instalado Postman-desktop-agent para poder acceder a las rutas desde localhost si usas la web de Postman._
+
 #### Registro de Usuarios
 _Para registrar un usuario, envía una solicitud POST a la ruta /api/users con los datos del usuario en el cuerpo de la solicitud._
 ```
