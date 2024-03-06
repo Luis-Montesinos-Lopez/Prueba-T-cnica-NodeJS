@@ -10,7 +10,7 @@ datas.getData = async (req, res) => {
             return res.status(401).send("Unauthorized");
         };
         const user = await usersQuerys.getUserByEmail(payload.email);
-        if (user.length <= 0) {
+        if (!user) {
             return res.status(404).send("User does not exist");
         }
         const id = user.id;
