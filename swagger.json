@@ -21,7 +21,7 @@
     }
   ],
   "paths": {
-    "/users": {
+    "/api/v1/users": {
       "post": {
         "tags": ["Users"],
         "summary": "Add a new user",
@@ -60,7 +60,7 @@
         }
       }
     },
-    "/users/login": {
+    "/api/v1/users/login": {
       "post": {
         "tags": ["Users"],
         "summary": "Login a user",
@@ -114,7 +114,7 @@
         }
       }
     },
-    "/datas": {
+    "/api/v1/datas": {
       "get": {
         "tags": ["Data"],
         "summary": "Get data",

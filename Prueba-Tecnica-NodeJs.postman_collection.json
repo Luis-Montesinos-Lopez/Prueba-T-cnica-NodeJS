@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "a7bce90b-f960-4677-abe1-3941c47d6af6",
+		"_postman_id": "d259a845-5c3d-4622-856a-7e6387bab918",
 		"name": "Prueba-Tecnica-NodeJs",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "33169971"
@@ -24,13 +24,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/users",
+							"raw": "http://{{server}}:{{port}}/api/v1/users",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"{{server}}"
 							],
-							"port": "3000",
+							"port": "{{port}}",
 							"path": [
+								"api",
+								"v1",
 								"users"
 							]
 						}
@@ -52,13 +54,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/users/login",
+							"raw": "http://{{server}}:{{port}}/api/v1/users/login",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"{{server}}"
 							],
-							"port": "3000",
+							"port": "{{port}}",
 							"path": [
+								"api",
+								"v1",
 								"users",
 								"login"
 							]
@@ -99,13 +103,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/datas",
+							"raw": "http://{{server}}:{{port}}/api/v1/datas",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"{{server}}"
 							],
-							"port": "3000",
+							"port": "{{port}}",
 							"path": [
+								"api",
+								"v1",
 								"datas"
 							]
 						}

@@ -15,8 +15,8 @@ app.use(express.text());
 app.use(logger("dev"));
 app.use(cors());
 
-app.use("/users", usersRouter);
-app.use("/datas", datasRouter);
+app.use("/api/v1/users", usersRouter);
+app.use("/api/v1/datas", datasRouter);
 
 app.listen(port, () => {
     console.log(pc.cyan(`🚀 Server running on port ${port}`))
