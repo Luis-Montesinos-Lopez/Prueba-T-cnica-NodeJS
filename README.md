@@ -55,32 +55,51 @@ _Para usar las rutas definidas en Postman solo tienes que importar el archivo ad
 ```
 Prueba-Tecnica-NodeJs.postman_collection.json
 ```
+
+_Importamos también las variables de entorno_
+´´´
+PruebaNodeJS.postman_environment.json
+´´´
+
 #### **¡IMPORTANTE!**
 _Asegúrate de tener instalado Postman-desktop-agent para poder acceder a las rutas desde localhost si usas la web de Postman._
 
 #### Registro de Usuarios
-_Para registrar un usuario, envía una solicitud POST a la ruta /api/users con los datos del usuario en el cuerpo de la solicitud._
+_Para registrar un usuario, envía una solicitud POST a la ruta /api/v1/users con los datos del usuario en el cuerpo de la solicitud._
 ```
 http://localhost:3000/api/v1/users
 ```
+_O si estamos usando las variables de entorno_
+´´´
+http://{{server}}:{{port}}/api/v1/users
+´´´
+
 _Se ha configurado para que se deban rellenar todos los datos del usuario (nombre, email y password)._
 _Además, el nombre solo puede contener letras._
 _Solo se permiten emails válidos._
 _La contraseña se encripta usando el módulo md5 para una mayor seguridad._
 
 #### Login
-_Para iniciar sesión, envía una solicitud POST a la ruta /api/login con el email y la contraseña en el cuerpo de la solicitud._
+_Para iniciar sesión, envía una solicitud POST a la ruta /api/v1/users/login con el email y la contraseña en el cuerpo de la solicitud._
 ```
 http://localhost:3000/api/v1/users/login
 ```
+_O si estamos usando las variables de entorno_
+´´´
+http://{{server}}:{{port}}/api/v1/users/login
+´´´
 _Tras comprobar el email y la contraseña, si todo ha ido correctamente, se devolverá el token firmado con la clave secreta que se_ _encuentra en el archivo .env._
 _Este token deberá ser introducido en la sección Authorization del header en la siguiente ruta._
 
 #### Acceso a los datos
-_Para obtener datos, envía una solicitud GET a la ruta /api/datas con el token de acceso en el header Authorization._
+_Para obtener datos, envía una solicitud GET a la ruta /api/v1/datas con el token de acceso en el header Authorization._
 ```
 http://localhost:3000/api/v1/datas
 ```
+_O si estamos usando las variables de entorno_
+´´´
+http://{{server}}:{{port}}/api/v1/datas
+´´´
 _Tras verificar el token y comprobar la existencia del usuario cuya información contiene, si todo es correcto, se procederá a_
 _mostrar los datos ordenados jerárquicamente donde primero se muestra el elemento que no tiene padre y, anidados en su interior,_
 _sus hijos y los hijos de los mismos._
