@@ -37,6 +37,11 @@ datas.getData = async (req, res) => {
                 result.push(item);
             }
         });
+        data.forEach(item => {
+            if (item.hijos.length === 0) {
+                delete item.hijos;
+            }
+        });
         return res.status(200).send(result);
     } catch (e) {
         return res.status(500).send(e.message);
