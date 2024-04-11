@@ -1,6 +1,6 @@
 const md5 = require("md5");
 const moment = require("moment");
-const db = require("../dbConnection");
+const db = require("../../dbConnection");
 
 let usersQuerys = {};
 

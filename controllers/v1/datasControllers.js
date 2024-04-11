@@ -1,5 +1,5 @@
-const dataQuerys = require("../services/querys/datasQuerys");
-const usersQuerys = require("../services/querys/usersQuerys");
+const dataQuerys = require("../../services/querys/v1/datasQuerys");
+const usersQuerys = require("../../services/querys/v1/usersQuerys");
 
 let datas = {};
 

@@ -5,9 +5,10 @@ const cors = require("cors");
 const pc = require("picocolors");
 const app = express();
 
-const usersRouter = require("./routes/usersRouter");
-const datasRouter = require("./routes/dataRouter");
-const swaggerDocs = require("./swagger")
+const usersRouter = require("./routes/v1/usersRouter");
+const datasRouter = require("./routes/v1/dataRouter");
+const swaggerDocs = require("./swagger");
+
 const port = process.env.PORT;
 
 app.use(express.json());
